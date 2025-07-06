@@ -18,7 +18,7 @@ serde = "1.0"
 skia-safe = { version = "0.80", features = ["textlayout"] }
 
 meme_generator_core = "0.0.4"
-meme_generator_utils = "0.0.7"
+meme_generator_utils = "0.0.8"
 
 [profile.release]
 strip = true

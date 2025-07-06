@@ -5,6 +5,7 @@ use meme_generator_utils::{
     builder::{InputImage, MemeOptions},
     encoder::{make_gif_or_combined_gif, FrameAlign, GifInfo},
     image::ImageExt,
+    shortcut,
     tools::{load_image, local_date, new_surface},
 };
 
@@ -49,7 +50,8 @@ register_meme!(
     do_,
     min_images = 2,
     max_images = 2,
-    keywords = &["撅", "狠狠地撅"],
+    keywords = &["撅"],
+    shortcuts = &[shortcut!("狠狠地撅", options = &[("fps", 50)])],
     date_created = local_date(2023, 3, 7),
     date_modified = local_date(2023, 3, 7),
 );
